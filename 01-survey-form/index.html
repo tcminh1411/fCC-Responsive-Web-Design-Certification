@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khảo sát AI trong lập trình - ĐHCT</title>
+  </head>
+  <body>
+    <h1 id="title">Khảo sát về AI trong lập trình</h1>
+    <p id="description">
+      Trường Đại học Cần Thơ (ĐHCT) - Khảo sát sinh viên về việc sử dụng AI
+      trong học tập lập trình
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label">Họ và tên:</label>
+      <input type="text" id="name" placeholder="Nhập họ tên của bạn" required />
+      <br /><br />
+
+      <label id="email-label">Email sinh viên:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="mssv@student.ctu.edu.vn"
+        required
+      />
+      <br /><br />
+
+      <label id="number-label">Năm thứ:</label>
+      <input
+        type="number"
+        id="number"
+        min="1"
+        max="5"
+        placeholder="1, 2, 3, 4, ..."
+      />
+      <br /><br />
+
+      <label>Khoa:</label>
+      <select id="dropdown">
+        <option value="cntt">Công nghệ thông tin</option>
+        <option value="ktdc">Kỹ thuật điện tử - CN</option>
+        <option value="khmt">Khoa học máy tính</option>
+        <option value="khac">Khoa khác</option>
+      </select>
+      <br /><br />
+
+      <label>Bạn thích AI nào để hỗ trợ lập trình nhất?</label><br />
+      <input type="radio" name="ai-tool" value="chatgpt" /> ChatGPT<br />
+      <input type="radio" name="ai-tool" value="copilot" /> GitHub Copilot<br />
+      <input type="radio" name="ai-tool" value="gemini" /> Google Gemini<br />
+      <input type="radio" name="ai-tool" value="not-used" /> Chưa sử dụng<br />
+      <br />
+
+      <label>Mục đích sử dụng AI (có thể chọn nhiều):</label><br />
+      <input type="checkbox" value="debug" /> Sửa lỗi (debug)<br />
+      <input type="checkbox" value="code" /> Viết code mẫu<br />
+      <input type="checkbox" value="learn" /> Học kiến thức mới<br />
+      <input type="checkbox" value="homework" /> Làm bài tập<br />
+      <input type="checkbox" value="project" /> Làm đồ án<br />
+      <br />
+
+      <label>Ý kiến đóng góp thêm:</label><br />
+      <textarea
+        rows="4"
+        cols="50"
+        placeholder="Chia sẻ suy nghĩ của bạn về AI trong học lập trình..."
+      ></textarea>
+      <br /><br />
+
+      <button type="submit" id="submit">Gửi khảo sát</button>
+    </form>
+  </body>
+</html>
